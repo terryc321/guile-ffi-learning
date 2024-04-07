@@ -1,13 +1,15 @@
 
 # Foreign function interface - learning guile 3.0 ffi 
 
+test
+
 seems like guile 3.0.9 documentation needs a pull request 
 
 [Good Code - section 5.3.1 A Sample Guile Extension ](https://www.gnu.org/software/guile/manual/html_node/A-Sample-Guile-Extension.html)
 
 [Bad Code - section 6.19.2 Foreign Extensions](https://www.gnu.org/software/guile/manual/html_node/Foreign-Extensions.html)
 
-## 001 - math bessel
+### 001 - math bessel
 
 to be able to call bessel j0 procedure from guile scheme
 
@@ -18,7 +20,7 @@ b )  write a guile module exports j0
 c )  start guile , load bessel.scm
 d )  (use-modules (math bessel))
 e )  finally call j0
-     
+     	 
 (j0 3) =>  -0.2600519549019335
 
 for what its worth , i have no idea what the bessel function does.
@@ -47,6 +49,18 @@ scm_to_double  scheme -> c code
 in c booleans are just small ints , common 0 means false. 
 Anything else means true.
 
-![Alt text](./002-booleans/Screenshot_2024-04-07_02-05-47.png?raw=true "Boolean conversion")
-
 [Integers , Char , Big Nums](https://www.gnu.org/software/guile/manual/html_node/Integers.html)
+
+In general conversion from c to scheme / scheme to c basic types is simply a matter of choosing given
+routine from libguile
+
+scm_from_<some-c-type>  c code -> scheme 
+scm_to_<some-c-type>    scheme -> c code
+
+What really interested in now is how to work with c structures , c unions and c pointers .
+
+this will unlock entire c platform to guile scheme code.
+
+
+
+
