@@ -39,8 +39,7 @@ and visa versa.
 
 ## 002  - simple boolean procedure
 
-[Boolean datatype] (https://www.gnu.org/software/guile/manual/html_node/Booleans.html)
-
+[Boolean datatype](https://www.gnu.org/software/guile/manual/html_node/Booleans.html)
 
 scm_from_double  c code -> scheme 
 scm_to_double  scheme -> c code
@@ -50,3 +49,4 @@ Anything else means true.
 
 ![Alt text](./002-booleans/Screenshot_2024-04-07_02-05-47.png?raw=true "Boolean conversion")
 
+[Integers , Char , Big Nums](https://www.gnu.org/software/guile/manual/html_node/Integers.html)
