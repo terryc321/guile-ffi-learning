@@ -57,9 +57,34 @@ routine from libguile
 scm_from_<some-c-type>  c code -> scheme 
 scm_to_<some-c-type>    scheme -> c code
 
-What really interested in now is how to work with c structures , c unions and c pointers .
+Foreign function interface really concerned with c structures , c unions and c pointers .
 
-this will unlock entire c platform to guile scheme code.
+definitely a big step forward , if we can get a handle on understanding this topic.
+
+## 009 - foreign c image structure 
+
+c image type with width , height and pointer to byte array
+
+challenge is to get guile scheme to somehow load the shared library and use the library to do something.
+
+load_extension loads foreign library and then looks for a thunk procedure no args to run first
+
+missing was call to init_image_type
+
+without this foreign type being declared , guile scheme simply segfaults without explanation.
+
+# 010 - a simple pair structure of two integers
+
+```c
+struct pair {
+ int a;
+ int b;
+ }
+```
+
+
+ 
+
 
 
 
