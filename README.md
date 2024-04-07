@@ -5,7 +5,7 @@ seems like guile 3.0.9 documentation needs a pull request
 
 [Good Code - section 5.3.1 A Sample Guile Extension ](https://www.gnu.org/software/guile/manual/html_node/A-Sample-Guile-Extension.html)
 
-[Bad Code - section 6.19.2 Foreign Extensions] https://www.gnu.org/software/guile/manual/html_node/Foreign-Extensions.html
+[Bad Code - section 6.19.2 Foreign Extensions] (https://www.gnu.org/software/guile/manual/html_node/Foreign-Extensions.html)
 
 ## 001 - math bessel
 
