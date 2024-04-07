@@ -42,24 +42,11 @@ and visa versa.
 [Boolean datatype] (https://www.gnu.org/software/guile/manual/html_node/Booleans.html)
 
 
-negation is a simple boolean procedure
-
-
-
-
-
-to make a SCM value
 scm_from_double  c code -> scheme 
 scm_to_double  scheme -> c code
 
-scm_c_define_gsubr
-j0 is the name of procedure
-1 means takes 1 argument
-0 means no optional args
-0 means no 
+in c booleans are just small ints , common 0 means false. 
+Anything else means true.
 
-
-in c boolean is just 0 false and anything else positive or negative is true ?
-if thats what want it to mean
-0 or 1
+![Alt text](./002-booleans/Screenshot_2024-04-07_02-05-47.png?raw=true "Boolean conversion")
 
