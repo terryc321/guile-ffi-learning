@@ -9,6 +9,7 @@ utf-8 ?
 */
 
 
+
 #include <math.h>
 #include <libguile.h>
 
@@ -35,4 +36,5 @@ void init_character_routines (void)
   scm_c_define_gsubr ("to-lower", 1, 0, 0, c_proc_2);
   
 }
+
 
