@@ -1,7 +1,7 @@
 
 # Foreign function interface - learning guile 3.0 ffi 
 
-test4
+test6
 
 seems like guile 3.0.9 documentation needs a pull request 
 
